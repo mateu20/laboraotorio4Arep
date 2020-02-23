@@ -25,10 +25,24 @@ public class webServiceHello {
         		"  </head>\n" + 
         		"  <body>\n" + 
         		"    <h1>Beinvenido!</h1>\n" + 
-        		"    <p>Beinvenido a Arep 2020-1...</p>\n" +
+        		"    <p>Bienvenido a Arep 2020-1...</p>\n" +
         		"    <p> Este es el campus de la Escuela</p>\n "+
         		"    <img src=\"campusEci.png\" >\r\n" +
         		"  </body>\n" + 
+        		"</html>";
+    }
+    
+    @web("pruebaSolicitud.html")
+    public static String content2(){
+        return "<!DOCTYPE html>\n" + 
+        		" <html>\n" + 
+        		"<head>\n" + 
+        		"<meta charset=\\\"UTF-8\\\">\n" + 
+        		"<title>Page2</title>\n" +
+        		"</head>\n" + 
+        		"<body>\n" + 
+        		"<h1>Prueba de otra pagina web</h1>\n" + 
+        		"</body>\n" + 
         		"</html>";
     }
     
