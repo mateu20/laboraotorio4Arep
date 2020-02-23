@@ -24,10 +24,11 @@ public class webServiceHello {
         		"    <title>Arep</title>\n" + 
         		"  </head>\n" + 
         		"  <body>\n" + 
-        		"    <h1>Beinvenido!</h1>\n" + 
+        		"    <h1>Bienvenido!</h1>\n" + 
         		"    <p>Bienvenido a Arep 2020-1...</p>\n" +
         		"    <p> Este es el campus de la Escuela</p>\n "+
         		"    <img src=\"campusEci.png\" >\r\n" +
+        		"<a href=\"/pruebaSolicitud.html\">pruebaSolicitud.html</a></br>"+
         		"  </body>\n" + 
         		"</html>";
     }
