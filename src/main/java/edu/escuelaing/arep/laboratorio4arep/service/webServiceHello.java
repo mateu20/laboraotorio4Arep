@@ -17,7 +17,7 @@ import edu.escuelaing.arep.laboratorio4.anotaciones.web;
 public class webServiceHello {
     
     @web("campus.html") 
-    public static String hello(){
+    public static String content(){
         return "<<!DOCTYPE html>\n" + 
         		"<html>\n" + 
         		"  <head>\n" + 
@@ -26,7 +26,7 @@ public class webServiceHello {
         		"  <body>\n" + 
         		"    <h1>Beinvenido!</h1>\n" + 
         		"    <p>Beinvenido a Arep 2020-1...</p>\n" +
-        		"    <p> Este es el campus de la Escuela "+
+        		"    <p> Este es el campus de la Escuela</p>\n "+
         		"    <img src=\"campusEci.png\" >\r\n" +
         		"  </body>\n" + 
         		"</html>";

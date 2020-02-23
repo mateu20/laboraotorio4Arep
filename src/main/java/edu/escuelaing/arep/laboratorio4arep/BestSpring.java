@@ -25,7 +25,7 @@ public class BestSpring {
     
     public static void Leer(){
     	
-    	Reflections reflections = new Reflections("edu.escuelaing.arep.laboratorio4.service", new SubTypesScanner(false)); 
+    	Reflections reflections = new Reflections("edu.escuelaing.arep.laboratorio4arep.service", new SubTypesScanner(false)); 
     	Set<Class<? extends Object>> clases =  reflections.getSubTypesOf(Object.class);
     	
       	for (Class c:clases) {
