@@ -14,6 +14,11 @@ import java.lang.annotation.RetentionPolicy;
  */
 @Retention(RetentionPolicy.RUNTIME)
 public @interface  web {
+	
+	/**
+	 * 
+	 * @return Devuelve la ruta de la pagina web creada
+	 */
 	String value();
 }
     

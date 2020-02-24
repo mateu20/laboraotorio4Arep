@@ -22,7 +22,9 @@ import org.reflections.scanners.SubTypesScanner;
 public class BestSpring {
 	
 	private static HashMap<String,String> URL= new HashMap<>();
-    
+    /**
+     * metodo que lee los objetos java planos antiguos o POJOS y los guarda en un hashmap
+     */
     public static void Leer(){
     	
     	Reflections reflections = new Reflections("edu.escuelaing.arep.laboratorio4arep.service", new SubTypesScanner(false)); 
@@ -47,7 +49,11 @@ public class BestSpring {
             
             
 	}
-
+    
+    /**
+     * 
+     * @return el hashmap con el contenido html de las paginas leidas.
+     */
 	public static HashMap<String, String> getRutaPaginas() {
 		// TODO Auto-generated method stub
 		return URL;

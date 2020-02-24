@@ -17,6 +17,10 @@ import edu.escuelaing.arep.laboratorio4.anotaciones.web;
 public class webServiceHello {
     
     @web("campus.html") 
+    /**
+     * 
+     * @return Retorna el contenido de una pagina web html con imagenes
+     */
     public static String content(){
         return "<<!DOCTYPE html>\n" + 
         		"<html>\n" + 
@@ -26,14 +30,19 @@ public class webServiceHello {
         		"  <body>\n" + 
         		"    <h1>Bienvenido!</h1>\n" + 
         		"    <p>Bienvenido a Arep 2020-1...</p>\n" +
+        		"<a href=\"/pruebaSolicitud.html\">pruebaSolicitud.html</a></br>"+
         		"    <p> Este es el campus de la Escuela</p>\n "+
         		"    <img src=\"campusEci.png\" >\r\n" +
-        		"<a href=\"/pruebaSolicitud.html\">pruebaSolicitud.html</a></br>"+
+        		
         		"  </body>\n" + 
         		"</html>";
     }
     
     @web("pruebaSolicitud.html")
+    /**
+     * 
+     * @return @return Retorna el contenido de una pagina web html
+     */
     public static String content2(){
         return "<!DOCTYPE html>\n" + 
         		" <html>\n" + 

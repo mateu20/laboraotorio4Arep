@@ -11,12 +11,22 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.io.*;
 
+/**
+*
+* @author david.gonzalez-g
+*/
+
 public class Server {
 	static PrintWriter out;
 	static BufferedReader in;
 	static ServerSocket serverSocket = null;	
 	static Socket clientSocket = null;	
 	
+	/**
+	 * metodo constructor de nuestros recursos.
+	 * @param args 
+	 * @throws IOException
+	 */
   public static void main(String[] args) throws IOException {
 	  serverSocket = null;
 	  BestSpring.Leer();	   
@@ -68,6 +78,11 @@ public class Server {
 		    clientSocket.close(); 
 	   }
   }
+  /**
+   * 
+   * @param req lee los archivos .html , .png , jpg y js solicitados 
+   * @throws IOException
+   */
   public static void returnRequest(String req) throws IOException {	  
 	  String path = "src/main/resources/";
       String ext = FilenameUtils.getExtension(req);
@@ -115,7 +130,10 @@ public class Server {
       }
 	  
   }
-  
+  /**
+   * 
+   * @return el puerto por defecto de heroku 
+   */
   static int getPort() {
       if (System.getenv("PORT") != null) {
           return Integer.parseInt(System.getenv("PORT"));
