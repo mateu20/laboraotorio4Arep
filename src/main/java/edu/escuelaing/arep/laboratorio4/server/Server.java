@@ -112,6 +112,7 @@ public class Server {
 	    	  
 	      }
 	      else {
+	    	  
 				  out.println("HTTP/1.1 200 \r\nContent-Type: text/html\r\n\r\n");
 		    	  BufferedReader br = new BufferedReader(new FileReader(file));
 	
